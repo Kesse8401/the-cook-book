@@ -1,0 +1,20 @@
+---
+export interface Props {
+	href: string;
+}
+
+const { href } = Astro.props;
+---
+
+	<a href={href}>
+		<img class="logoImage" src="/images/Logo.png" />
+	</a>
+<style>
+
+.logoImage {
+	width: 150px;
+	height: 100%;
+	margin: 0%;
+}
+
+</style>
