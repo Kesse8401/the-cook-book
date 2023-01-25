@@ -1,5 +1,5 @@
 ---
-title: Baba Ganoush
+title: Corn Chowder
 layout: ../../layouts/BlogLayout.astro
 ---
 <!-- ![starters](/images/starters.png) -->

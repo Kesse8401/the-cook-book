@@ -33,6 +33,12 @@ import HomeHeader from "../components/HomeHeader.astro";
 				title="DESSERTS"
 				body="Go to my first made from scratch page in this project"
 			/>
+			<Card
+				href="/miscellaneous/"
+				image="/images/pasta.jpg"
+				title="MISCELLANEOUS"
+				body="Go to my first made from scratch page in this project"
+			/>
 		</ul>
 	</main>
 </Layout>
@@ -40,6 +46,7 @@ import HomeHeader from "../components/HomeHeader.astro";
 <style>
 	ul {
 		display: flex;
+		flex-wrap: wrap;
 		width: 80%;
 		margin: auto;
 		margin-top: 140px;
@@ -89,10 +96,10 @@ import HomeHeader from "../components/HomeHeader.astro";
 	.instructions strong {
 		color: rgb(var(--accent));
 	}*/
-	/* .link-card-grid {
+	 .link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
+		gap: 2rem;
 		padding: 0;
-	}  */
+	}  
 </style>
