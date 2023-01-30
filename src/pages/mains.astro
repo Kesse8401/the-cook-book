@@ -20,7 +20,7 @@ import MealType from "../layouts/MealType.astro";
 			/>
 			<Card
 				href="/posts/mains3-enchiladas"
-				title="Community"
+				title="Enchiladas"
 				body="Delicious and cheesee!"
 				image="/../images/enchiladas.jpeg"
 			/>
@@ -59,10 +59,20 @@ import MealType from "../layouts/MealType.astro";
 </MealType>
 
 <style>
-	ul {
-		display: flex;
-		width: 80%;
+		ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: ;
+		grid-column-gap: 3px;
+		grid-row-gap: 3px;
+		width: 75%;
 		margin: auto;
+		margin-top: 10px;
 		padding: 0;
+	}
+
+	main {
+		margin: auto;
+		width: 100%;
 	}
 </style>

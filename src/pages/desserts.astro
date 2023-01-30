@@ -6,10 +6,6 @@ import MealType from '../layouts/MealType.astro';
 
 <MealType title="DESSERTS">
 	<main>
-		<h1>Welcome to <span class="text-gradient">DESSERTS</span></h1>
-		<p class="instructions">
-			DESSERTS
-		</p>
 		<ul role="list" class="link-card-grid">
 			
 			<Card
@@ -36,16 +32,38 @@ import MealType from '../layouts/MealType.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 				image='/../images/cake.jpeg'
 			/>
+			<Card
+				href="https://astro.build/chat/"
+				title="Community"
+				body="Come say hi to our amazing Discord community. ❤️"
+				image='/../images/cake.jpeg'
+			/>
+			<Card
+				href="https://astro.build/chat/"
+				title="Community"
+				body="Come say hi to our amazing Discord community. ❤️"
+				image='/../images/cake.jpeg'
+			/>
+			
 		</ul>
 	</main>
 </MealType>
 
 <style>
-	ul {
-		display: flex;
-		width: 80%;
+		ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: ;
+		grid-column-gap: 3px;
+		grid-row-gap: 3px;
+		width: 75%;
 		margin: auto;
+		margin-top: 10px;
 		padding: 0;
-		
+	}
+
+	main {
+		margin: auto;
+		width: 100%;
 	}
 </style>
