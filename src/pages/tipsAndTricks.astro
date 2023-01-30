@@ -1,0 +1,78 @@
+---
+import Card from "../components/Card.astro";
+import MealType from "../layouts/MealType.astro";
+---
+
+<MealType title="TIPS AND TRICKS">
+	<main>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/posts/mains1-bolognese"
+				title="Perfect Pasta"
+				body="Perfect for Spaghetti or Lasagna."
+				image="/../images/pastaWrack.jpg"
+			/>
+			<Card
+				href="/posts/mains2-coqAuVin"
+				title="Best pierogi's dough"
+				body="Generations worked on it."
+				image="/../images/pierogi.jpeg"
+			/>
+			<Card
+				href="/posts/mains3-enchiladas"
+				title="Enchiladas"
+				body="Delicious and cheesee!"
+				image="/../images/enchiladas.jpeg"
+			/>
+			<Card
+				href="/posts/mains4-kotbullar"
+				title="Kotbullar"
+				body="Original old fashion recipe."
+				image="/../images/kotbullar.jpeg"
+			/>
+			<Card
+				href="/posts/mains1-bolognese"
+				title="Ragu Bolognese"
+				body="Perfect for Spaghetti or Lasagna."
+				image="/../images/bolognese.jpeg"
+			/>
+			<Card
+				href="/posts/mains2-coqAuVin"
+				title="Coq Au Vin"
+				body="Thanks to Adam Ragussea tis old classic got new interface."
+				image="/../images/coqAuVin.jpeg"
+			/>
+			<Card
+				href="/posts/mains3-enchiladas"
+				title="Community"
+				body="Delicious and cheesee!"
+				image="/../images/enchiladas.jpeg"
+			/>
+			<Card
+				href="/posts/mains4-kotbullar"
+				title="Kotbullar"
+				body="Original old fashion recipe."
+				image="/../images/kotbullar.jpeg"
+			/>
+		</ul>
+	</main>
+</MealType>
+
+<style>
+		ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: ;
+		grid-column-gap: 3px;
+		grid-row-gap: 3px;
+		width: 75%;
+		margin: auto;
+		margin-top: 10px;
+		padding: 0;
+	}
+
+	main {
+		margin: auto;
+		width: 100%;
+	}
+</style>

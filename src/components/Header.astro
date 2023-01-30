@@ -10,17 +10,16 @@ const { title, href } = Astro.props;
 
 <header class="header">
 	<Logo href={"/"} />
+	<p class="empty"></p>
 	<h1 class="text-style">{title}</h1>
-	<div class="links">
-		<a class="starters" href={"/starters/"} title={title}>STARTERS</a>
-		<a class="soups" href={"/soups/"} title={title}>SOUPS</a>
-		<a class="mains" href={"/mains/"} title={title}>MAINS</a>
-		<a class="desserts" href={"/desserts/"} title={title}>DESSERTS</a>
-		<a class="salads" href={"/salads/"} title={title}>SALADS</a>
-		<a class="tipsAndTricks" href={"/tipsAndTricks/"} title={title}
-			>TIPS & TRICKS</a
-		>
-	</div>
+	<a class="starters" href={"/starters/"} title={title}>STARTERS</a>
+	<a class="soups" href={"/soups/"} title={title}>SOUPS</a>
+	<a class="mains" href={"/mains/"} title={title}>MAINS</a>
+	<a class="desserts" href={"/desserts/"} title={title}>DESSERTS</a>
+	<a class="salads" href={"/salads/"} title={title}>SALADS</a>
+	<a class="tipsAndTricks" href={"/tipsAndTricks/"} title={title}
+		>TIPS & TRICKS</a
+	>
 </header>
 
 <style>
@@ -39,11 +38,8 @@ const { title, href } = Astro.props;
 		grid-row-gap: 0px;
 	}
 
-	.links {
-		/* flex-direction: row;
-		display: flex; */
-		display: grid;
-
+	.empty {
+		grid-area: 1 / 3 / 2 / 5; 
 	}
 
 	.starters {
@@ -70,8 +66,9 @@ const { title, href } = Astro.props;
 		color: rgb(31, 31, 31);
 		font-size: 20px;
 		font-weight: 900;
-		/* align-items: center;
-        justify-content: space-around; */
+		display: flex;
+		align-items: center;
+        justify-content: space-around; 
 	}
 
 	a:link {
@@ -94,6 +91,6 @@ const { title, href } = Astro.props;
 		color: rgb(31, 31, 31);
 		text-align: center;
 		font-size: 40px;
-		grid-area: 1 / 4 / 2 / 7;
+		grid-area: 1 / 5 / 2 / 7;
 	}
 </style>
