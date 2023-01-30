@@ -7,27 +7,39 @@ import MealType from "../layouts/MealType.astro";
 	<main>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://astro.build/chat/"
+				href="/posts/starters2/"
+				title="Gratin"
+				body="Greasy and delicious."
+				image="/../images/gratin.jpeg"
+			/>
+			<Card
+				href="/posts/starters2/"
 				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				body="Greasy and delicious."
+				image="/../images/gratin.jpeg"
+			/>
+			<Card
+				href="/posts/starters2/"
+				title="Community"
+				body="Greasy and delicious."
+				image="/../images/gratin.jpeg"
+			/>
+			<Card
+				href="/posts/starters2/"
+				title="Community"
+				body="Greasy and delicious."
 				image="/../images/frenchTacos.jpeg"
 			/>
 			<Card
 				href="https://astro.build/chat/"
 				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				body="Greasy and delicious."
 				image="/../images/frenchTacos.jpeg"
 			/>
 			<Card
 				href="https://astro.build/chat/"
 				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-				image="/../images/frenchTacos.jpeg"
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				body="Greasy and delicious."
 				image="/../images/frenchTacos.jpeg"
 			/>
 		</ul>
@@ -36,11 +48,15 @@ import MealType from "../layouts/MealType.astro";
 
 <style>
 	ul {
-		display: flex;
-		width: 80%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: ;
+		grid-column-gap: 3px;
+		grid-row-gap: 3px;
+		width: 75%;
 		margin: auto;
+		margin-top: 10px;
 		padding: 0;
-		
 	}
 
 	main {
@@ -48,6 +64,4 @@ import MealType from "../layouts/MealType.astro";
 		width: 100%;
 		display: grid;
 	}
-
-	
 </style>
