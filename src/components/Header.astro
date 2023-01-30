@@ -12,6 +12,7 @@ const { title, href } = Astro.props;
 	<Logo href={"/"} />
 	<p class="empty"></p>
 	<h1 class="text-style">{title}</h1>
+	<p class="empty2"></p>
 	<a class="starters" href={"/starters/"} title={title}>STARTERS</a>
 	<a class="soups" href={"/soups/"} title={title}>SOUPS</a>
 	<a class="mains" href={"/mains/"} title={title}>MAINS</a>
@@ -20,46 +21,56 @@ const { title, href } = Astro.props;
 	<a class="tipsAndTricks" href={"/tipsAndTricks/"} title={title}
 		>TIPS & TRICKS</a
 	>
+	<p class="empty3"></p>
 </header>
 
 <style>
 	.header {
-		width: 95%;
+		width: 100%;
 		margin-top: 20px;
-		margin-left: 20px;
+		/* margin-left: 20px; */
 		/* text-align: center; */
-		margin-bottom: 150px;
+		margin-bottom: 120px;
 		/* display: flex;
 		justify-content: space-between; */
 		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: 180px 50px;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 180px 20px;
 		grid-column-gap: 0px;
-		grid-row-gap: 0px;
+		grid-row-gap: 10px;
 	}
 
 	.empty {
-		grid-area: 1 / 3 / 2 / 5; 
+		grid-area: 1 / 3 / 2 / 6;
 	}
 
-	.starters {
+	/* .empty2 {
 		grid-area: 2 / 1 / 3 / 2;
-	}
-	.soups {
+	} */
+
+	.starters {
 		grid-area: 2 / 2 / 3 / 3;
 	}
-	.mains {
+	.soups {
 		grid-area: 2 / 3 / 3 / 4;
 	}
-	.desserts {
+	.mains {
 		grid-area: 2 / 4 / 3 / 5;
 	}
-	.salads {
+	.desserts {
 		grid-area: 2 / 5 / 3 / 6;
 	}
-	.tipsAndTricks {
+	.salads {
 		grid-area: 2 / 6 / 3 / 7;
 	}
+	.tipsAndTricks {
+		grid-area: 2 / 7 / 3 / 8;
+	}
+
+	/* .empty3 {
+		grid-area: 2 / 8 / 3 / 9;
+		background-color: green;
+	} */
 
 	a {
 		margin: 10px;
@@ -68,7 +79,7 @@ const { title, href } = Astro.props;
 		font-weight: 900;
 		display: flex;
 		align-items: center;
-        justify-content: space-around; 
+		justify-content: space-around;
 	}
 
 	a:link {
@@ -91,6 +102,6 @@ const { title, href } = Astro.props;
 		color: rgb(31, 31, 31);
 		text-align: center;
 		font-size: 40px;
-		grid-area: 1 / 5 / 2 / 7;
+		grid-area: 1 / 6 / 2 / 9;
 	}
 </style>
