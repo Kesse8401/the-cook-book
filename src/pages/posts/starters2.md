@@ -1,9 +1,9 @@
 ---
 title: Baba Ganoush
 layout: ../../layouts/BlogLayout.astro
+src: public/images/cesarSalad.jpeg
 ---
-<!-- ![starters](/images/starters.png) -->
-<img src='/images/chicken.jpeg' alt='starters' width='350' height='500' />
+<!-- <img src='/images/chicken.jpeg' alt='starters' width='350' height='500' /> -->
 
 # Baba Ganoush
 
@@ -36,12 +36,3 @@ Pinch of smoked paprika, for garnish
 6.Transfer the baba ganoush to a serving bowl and lightly drizzle olive oil on top. Lastly, sprinkle parsley and smoked paprika on top. Serve with accompaniments of your choice. It’s also great on sandwiches!
 
 
-
-
-This Markdown file creates a page at `your-domain.com/page-1/`
-
-It probably isn't styled much, but Markdown does support:
-- **bold** and _italics._
-- lists
-- [links](https://astro.build)
-- and more!
