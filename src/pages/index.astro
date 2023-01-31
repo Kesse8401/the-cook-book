@@ -5,33 +5,44 @@ import HomeHeader from "../components/HomeHeader.astro";
 ---
 
 <Layout title="The Cook Book">
+	<HomeHeader title={"The Cook Book"} />
 	<main>
-		<HomeHeader title={"The Cook Book"} />
-
-		<ul role="list" class="link-card-grid">
+		<ul role="list">
 			<Card
 				href="/starters/"
-				image="/images/frenchTacos.jpeg"
-				title="STARTERS"
-				body="Go to my first made from scratch page in this project"
+				image="/images/gratin.jpeg"
+				title="STARTERS & SIDES"
+				body="Classics and experiments."
 			/>
 			<Card
 				href="/soups/"
 				image="/images/cornChowder.jpeg"
 				title="SOUPS"
-				body="ajlaksjdljlj"
+				body="Well tried recipes."
 			/>
 			<Card
 				href="/mains/"
 				image="/images/chicken.jpeg"
 				title="MAINS"
-				body="Go to my first made from scratch page in this project"
+				body="Reinvensions, authors ideas, authentic and crazy."
 			/>
 			<Card
 				href="/desserts/"
 				image="/images/cake.jpeg"
 				title="DESSERTS"
-				body="Go to my first made from scratch page in this project"
+				body="Remember to measure!"
+			/>
+			<Card
+				href="/desserts/"
+				image="/images/cesarSalad.jpeg"
+				title="SALADS"
+				body="Not much but all I could get. Not a big salad eater."
+			/>
+			<Card
+				href="/tipsAndTricks/"
+				image="/images/pastaWrack.webp"
+				title="TIPS AND TRICKS"
+				body="Hard earned knowledge."
 			/>
 		</ul>
 	</main>
@@ -39,8 +50,14 @@ import HomeHeader from "../components/HomeHeader.astro";
 
 <style>
 	ul {
-		display: flex;
-		width: 80%;
+		/* display: flex;
+		flex-wrap: wrap; */
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: ;
+		grid-column-gap: 3px;
+		grid-row-gap: 3px;
+		width: 75%;
 		margin: auto;
 		margin-top: 140px;
 		padding: 0;
@@ -48,10 +65,8 @@ import HomeHeader from "../components/HomeHeader.astro";
 
 	main {
 		margin: auto;
-		/* padding: 1.5rem; */
 		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
 	}
 
 	h1 {
@@ -61,38 +76,4 @@ import HomeHeader from "../components/HomeHeader.astro";
 		margin: 0;
 		text-align: center;
 	}
-
-	/*
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}*/
-	/* .link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}  */
 </style>

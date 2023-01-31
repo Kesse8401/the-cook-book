@@ -1,7 +1,7 @@
 ---
 import Card from '../components/Card.astro';
-import Header from '../components/Header.astro';
 import MealType from '../layouts/MealType.astro';
+
 ---
 
 <!-- <Header title='Soups and Chowders'/> -->
@@ -11,8 +11,8 @@ import MealType from '../layouts/MealType.astro';
 		<ul role="list" class="link-card-grid">
 			
 			<Card
-				href="https://astro.build/chat/"
-				title="A"
+				href="/posts/starters2/"
+				title="Corn Chowder"
 				body="Come say hi to our amazing Discord community. ❤️"
 				image='/../images/cornChowder.jpeg'
 			/>
@@ -39,5 +39,22 @@ import MealType from '../layouts/MealType.astro';
 </MealType>
 
 <style>
+
+ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: ;
+		grid-column-gap: 3px;
+		grid-row-gap: 3px;
+		width: 75%;
+		margin: auto;
+		margin-top: 10px;
+		padding: 0;
+	}
+
+	main {
+		margin: auto;
+		width: 100%;
+	}
 
 </style>
