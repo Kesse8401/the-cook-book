@@ -1,14 +1,15 @@
 ---
-import BlogBody from '../components/BlogBody.astro';
-import HeaderForPosts from '../components/HeaderForPosts.astro';
+import HeaderForPosts from "../components/HeaderForPosts.astro";
+import IngredientsAndInstructions from "../components/IngredientsAndInstructions.astro";
 
 export interface Props {
-	image: string;
+	img: string;
 	title: string;
+	href: string;
 	body: string;
 }
 
-const { img, title, href } = Astro.props;
+const { img, title, href, body } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -18,35 +19,52 @@ const { img, title, href } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-            rel="stylesheet"
-        />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
-		<HeaderForPosts title="THE COOK BOOK"/>
-		<BlogBody href={href} title={title} image={img} body="dupa"/>
-		<slot />
+		<HeaderForPosts title="THE COOK BOOK" />
+		<main class="container">
+			<img src={img} />
+			<h1 title={title}></h1>
+			<slot />
+
+			<!-- <IngredientsAndInstructions body={body} /> -->
+		</main>
+
 		<!-- <Footer /> -->
 	</body>
 </html>
+
 <style>
-	:root {
-		--accent: 217, 86, 43;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			#dac455 30%,
-			white 60%
-		);
-	}
+	
 	html {
 		font-family: "Montserrat", sans-serif;
 		background-color: #d6d8d2;
-
+	 
 	}
 
+	main {
+		padding-top: 20px;
+		margin: auto;
+		width: 80%;
+		background-color: rgb(211, 230, 213);
+		text-align: center;
+		border-radius: 0.5rem;
+	}
+
+	ul {
+		width: 80%;
+		text-align: left;
+		background-color: rgb(60, 143, 216);
+	}
+
+	/* img {
+		border-radius: 0.5rem;
+	} */
 </style>
