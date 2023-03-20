@@ -1,0 +1,29 @@
+@media screen and (max-width: 400px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background-color: red;
+  }
+}

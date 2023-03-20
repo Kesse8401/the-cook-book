@@ -1,47 +1,131 @@
 ---
-title: Corn Chowder
+title: Coq Au Vin
 layout: ../../layouts/BlogLayout.astro
 ---
-<!-- ![starters](/images/starters.png) -->
-<img src='/images/chicken.jpeg' alt='starters' width='350' height='500' />
 
-# Baba Ganoush
+<header class="header">
+  <!-- ![starters](/images/starters.png) -->
 
-# INGREDIENTS
+  # RAG&#218; ALLA BOLOGNESE
 
-2 pounds Italian eggplants (about 2 small-to-medium eggplants*)
-2 medium cloves of garlic, pressed or minced
-2 tablespoons lemon juice, more if necessary
-¼ cup tahini
-⅓ cup extra-virgin olive oil, plus more for brushing the eggplant and garnish
-2 tablespoons chopped fresh flat-leaf parsley, plus extra for garnish
-¾ teaspoon salt, to taste
-¼ teaspoon ground cumin
-Pinch of smoked paprika, for garnish
+  <img class="foodImage" src="/images/bolognese.jpeg" alt="starters" />
 
 
+  <div class="flex-container">
+    <div class="flex-items ingredients">
+      <h1 class="IngHead">Ingredients</h1>
+      <ul class="listOfIng">
+        <li>800gr Mince Beef</li>
+        <li>800gr of San Marzano tomatoes (canned)</li>
+        <li>200gr Pancetta</li>
+        <li>2 tbsp Tomato puree</li>
+        <li>1 glass of red wine (optional but recommended)</li>
+        <li>3 or 4 cloves of garlic</li>
+        <li>Mirepoix ok 300gr</li>
+        <li>2 bayleafs</li>
+        <li>Salt and Pepper</li>
+        <li>Pecorino or Parmigiano rind</li>
+        <li>Bunch of parsley</li>
+        <li>Small bunch of basil</li>
+        <li>Glass of milk or 12% cream</li>
+      </ul>
+    </div>
+    <div class="flex-items instructions">
+      <h1 class="IngHead">Instructions</h1>
+      <p class="parInstruct">
+        1. Fry pancetta and set aside. Fry mirepoix using residual fat. Once
+        soften put it aside. Brown the meat in batches. Fry tomato puree for a
+        30 sec. Add everything back to the pan/pot. Deglaze with wine. Add
+        leafs. When wine evaporates add stock, tomatoes and cheese rinds.
+      </p>
+      <p class="parInstruct">
+        2. Cook on low for few hours. Stir ocassionally.
+      </p>
+      <p class="parInstruct">
+        3. Add glass of full milk or 12% cream, mix and boil gently for few
+        minutes. Kill the heat and add chopped basil and parsley.
+      </p>
+      <p class="parInstruct">
+        4. Serve with pasta, use for lasagne or freeze in batches.
+      </p>
+      <p class="parInstruct"></p>
+      <p class="parInstruct"></p>
+    </div>
+  </div>
 
-# INSTRUCTIONS
-1.Preheat the oven to 450 degrees Fahrenheit with a rack in the upper third of the oven. Line a large, rimmed baking sheet with parchment paper to prevent the eggplant from sticking to the pan. Halve the eggplants lengthwise and brush the cut sides lightly with olive oil. Place them in the prepared pan with the halved sides down.
+  <style>
+    .ingredients {
+      width: 60%;
+      text-align: left;
+      margin: 25px;
+      margin-bottom: 40px;
+    }
 
-2.Roast the eggplant until the interior is very tender throughout and the skin is collapsing, about 35 to 40 minutes (this might take longer if you are using 1 large eggplant). Set the eggplant aside to cool for a few minutes. Flip the eggplants over and scoop out the flesh with a large spoon, leaving the skin behind.
+    .header {
+      font-weight: 700;
+      font-size: 30px;
+    }
 
-3.Place a mesh strainer over a mixing bowl, then transfer the flesh to the strainer and discard the skins. Pick out any stray bits of eggplant skin and discard. You want to remove as much moisture from the eggplant here as possible, so let the eggplant rest for a few minutes and shake/stir the eggplant to release some more moisture.
+    .foodImage {
+      height: 350px;
+      width: 350px;
+      border-radius: 0.5rem;
+      opacity: 0.8;
+    }
 
-4.Discard all of the eggplant drippings, drain and wipe out the bowl, and dump the eggplant into the bowl. Add the garlic and lemon juice to the eggplant and stir vigorously with a fork until eggplant breaks down. Add the tahini to the bowl and stir until it’s incorporated. While stirring, slowly drizzle in the olive oil. Continue stirring until the mixture is pale and creamy, and use your fork to break up any particularly long strings of eggplant.
+    .IngHead {
+      font-size: 20px;
+      margin: 20px;
+    }
 
-5.Stir in the parsley, salt and cumin. Season to taste with more salt (I usually add another ¼ teaspoon) and more lemon juice, if you’d like a more tart flavor.
+    .listOfIng {
+      list-style: none;
+      margin-left: 40px;
+      font-size: 18px;
+      line-height: 2.1;
+    }
 
+    ul {
+      padding: 0;
+    }
 
-6.Transfer the baba ganoush to a serving bowl and lightly drizzle olive oil on top. Lastly, sprinkle parsley and smoked paprika on top. Serve with accompaniments of your choice. It’s also great on sandwiches!
+    .instructions {
+        text-align: left;
+        margin: 25px;
+    }
 
+    .parInstruct {
+      margin-left: 40px;
+      font-size: 18px;
+      line-height: 2.1;
+      margin-bottom: 30px;
+    }
 
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: normal;
+      align-items: normal;
+      align-content: normal;
+    }
 
+    .flex-items:nth-child(1) {
+      display: block;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      align-self: auto;
+      order: 0;
+    }
 
-This Markdown file creates a page at `your-domain.com/page-1/`
-
-It probably isn't styled much, but Markdown does support:
-- **bold** and _italics._
-- lists
-- [links](https://astro.build)
-- and more!
+    .flex-items:nth-child(2) {
+      display: block;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      align-self: auto;
+      order: 0;
+    }
+  </style>
+</header>

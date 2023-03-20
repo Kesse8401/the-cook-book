@@ -10,8 +10,8 @@ layout: ../../layouts/BlogLayout.astro
 
   <img class="foodImage" src="/images/bolognese.jpeg" alt="starters" />
 
-  <div class="flex-container">
-    <div class="flex-items ingredients">
+  <div class="flex-container ingredients">
+    <div class="flex-items">
       <h1 class="IngHead">Ingredients</h1>
       <ul class="listOfIng">
         <li>800gr Mince Beef</li>
@@ -29,7 +29,7 @@ layout: ../../layouts/BlogLayout.astro
         <li>Glass of milk or 12% cream</li>
       </ul>
     </div>
-    <div class="flex-items instructions">
+    <div class="flex-items">
       <h1 class="IngHead">Instructions</h1>
       <p class="parInstruct">
         1. Fry pancetta and set aside. Fry mirepoix using residual fat. Once
@@ -73,7 +73,7 @@ layout: ../../layouts/BlogLayout.astro
     }
 
     .IngHead {
-      font-size: 20px;
+      font-size: 24px;
       margin: 20px;
     }
 
@@ -86,11 +86,6 @@ layout: ../../layouts/BlogLayout.astro
 
     ul {
       padding: 0;
-    }
-
-    .instructions {
-        text-align: left;
-        margin: 25px;
     }
 
     .parInstruct {
