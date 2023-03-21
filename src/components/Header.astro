@@ -1,7 +1,5 @@
 ---
 import Logo from "./Logo.astro";
-import Navigation from './Navigation.astro';
-
 
 export interface Props {
 	title: string;
@@ -10,7 +8,7 @@ export interface Props {
 const { title, href } = Astro.props;
 ---
 
-<header class="header">
+<header class="header nav-links">
 	<Logo href={"/"} />
 	<p class="empty"></p>
 	<h1 class="text-style">{title}</h1>
