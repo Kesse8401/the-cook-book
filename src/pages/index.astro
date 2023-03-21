@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import HomeHeader from "../components/HomeHeader.astro";
+import '../styles/global.css';
+
 // import { getCollection } from 'astro:content';
 // const blogEntries = await getCollection('blog');
 ---
@@ -59,8 +61,8 @@ import HomeHeader from "../components/HomeHeader.astro";
 	</main>
 </Layout>
 
-<style>
-	ul {
+<style is:global>
+	/* ul {
 		/* display: flex;
 		flex-wrap: wrap; */
 		display: grid;
@@ -72,7 +74,7 @@ import HomeHeader from "../components/HomeHeader.astro";
 		margin: auto;
 		margin-top: 140px;
 		padding: 0;
-	}
+	} */
 
 	main {
 		margin: auto;
