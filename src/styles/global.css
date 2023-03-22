@@ -1,53 +1,51 @@
-
 @media screen and (max-width: 400px) {
- 
   html {
     background-color: #378ce1;
   }
   ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: ;
-  grid-column-gap: 3px;
-  grid-row-gap: 3px;
-  width: 75%;
-  margin: auto;
-  margin-top: 140px;
-  padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr) 80px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    width: 75%;
+    margin: auto;
+    margin-top: 140px;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 900px) {
-
   html {
     background-color: #bce137;
   }
   ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: ;
-  grid-column-gap: 3px;
-  grid-row-gap: 3px;
-  width: 75%;
-  margin: auto;
-  margin-top: 140px;
-  padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    width: 75%;
+    margin: auto;
+    margin-top: 140px;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 901px) {
- 
   html {
     background-color: #b00ebb;
   }
 
   ul {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: ;
-		grid-column-gap: 3px;
-		grid-row-gap: 3px;
-		width: 75%;
-		margin: auto;
-		margin-top: 140px;
-		padding: 0;
-	}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    width: 75%;
+    margin: auto;
+    margin-top: 140px;
+    padding: 0;
+  }
 }
