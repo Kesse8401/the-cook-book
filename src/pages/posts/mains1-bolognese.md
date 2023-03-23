@@ -1,17 +1,19 @@
 ---
 title: BOLOGNESE
 layout: ../../layouts/BlogLayout.astro
+style: import '../../styles/global.css';
 ---
 
-<header class="header">
-  <!-- ![starters](/images/starters.png) -->
+<!-- <header class="header"> -->
 
-  # RAG&#218; ALLA BOLOGNESE
+  <main>
+
+# RAG&#218; ALLA BOLOGNESE
 
   <img class="foodImage" src="/images/bolognese.jpeg" alt="starters" />
 
-  <div class="flex-container">
-    <div class="flex-items ingredients">
+  <div class="recipe">
+    <div class="ingredients">
       <h1 class="IngHead">Ingredients</h1>
       <ul class="listOfIng">
         <li>800gr Mince Beef</li>
@@ -29,7 +31,7 @@ layout: ../../layouts/BlogLayout.astro
         <li>Glass of milk or 12% cream</li>
       </ul>
     </div>
-    <div class="flex-items instructions">
+    <div class="instructions">
       <h1 class="IngHead">Instructions</h1>
       <p class="parInstruct">
         1. Fry pancetta and set aside. Fry mirepoix using residual fat. Once
@@ -51,8 +53,10 @@ layout: ../../layouts/BlogLayout.astro
       <p class="parInstruct"></p>
     </div>
   </div>
+</main>
 
   <style>
+
     .ingredients {
       width: 60%;
       text-align: left;
@@ -100,31 +104,33 @@ layout: ../../layouts/BlogLayout.astro
       margin-bottom: 30px;
     }
 
-    .flex-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: normal;
-      align-items: normal;
-      align-content: normal;
-    }
+@media screen and (max-width: 400px) {
+      .recipe {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
 
-    .flex-items:nth-child(1) {
-      display: block;
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: auto;
-      align-self: auto;
-      order: 0;
-    }
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .recipe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
 
-    .flex-items:nth-child(2) {
-      display: block;
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: auto;
-      align-self: auto;
-      order: 0;
-    }
+@media screen and (min-width: 901px) {
+  .recipe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
   </style>
 </header>
